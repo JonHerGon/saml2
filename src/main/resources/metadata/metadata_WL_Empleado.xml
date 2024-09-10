@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="cloudb.wlpeagr.siat.sat.gob.mx">
+<md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>
+certificadoenbase64
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://peagrdev.siat.sat.gob.mx/cloudb/saml2/sp/ars/soap" index="0" isDefault="true"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://peagrdev.siat.sat.gob.mx/cloudb/saml2/sp/acs/artifact" index="0"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://peagrdev.siat.sat.gob.mx/cloudb/saml2/sp/acs/post" index="1"/>
+</md:SPSSODescriptor>
+<md:Organization>
+<md:OrganizationName xml:lang="en">Servicio de Administracion Tributaria</md:OrganizationName>
+<md:OrganizationDisplayName xml:lang="en">Servicio de Administracion Tributaria</md:OrganizationDisplayName>
+<md:OrganizationURL xml:lang="en"/>
+</md:Organization>
+<md:ContactPerson contactType="administrative">
+<md:Company>Servicio de Administracion Tributaria</md:Company>
+<md:GivenName>Ivan</md:GivenName>
+<md:SurName>Hernandez</md:SurName>
+<md:EmailAddress/>
+<md:TelephoneNumber/>
+</md:ContactPerson>
+</md:EntityDescriptor>

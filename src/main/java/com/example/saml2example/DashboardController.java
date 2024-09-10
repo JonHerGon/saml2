@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class DashboardController {
 
-    @GetMapping("/dashboard")
+    @GetMapping("/index")
     public String showDashboard() {
         return "index";  // Devuelve el nombre de la vista (sin la extensión .html)
     }

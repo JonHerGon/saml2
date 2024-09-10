@@ -16,7 +16,7 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/api/**").authenticated()  // Protege todas las rutas bajo /api/*
-                        .requestMatchers("/dashboard", "/logged-out").permitAll()  // Permite acceso sin autenticación a estas rutas
+                        .requestMatchers("/index", "/logged-out").permitAll()  // Permite acceso sin autenticación a estas rutas
                         .anyRequest().permitAll()  // Permite acceso sin autenticación a cualquier otra ruta
                 )
                 .saml2Login(saml2 -> saml2

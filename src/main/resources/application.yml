@@ -10,7 +10,7 @@ spring:
                   certificate-location: classpath:local.crt
             singlelogout:
               binding: POST
-              response-url: "http://localhost:9300/logout/saml2/sso/okta"
+              response-url: "http://localhost:9300/logout"
             assertingparty:
               metadata-uri: "classpath:metadata/metadata-idp.xml"
 server:
