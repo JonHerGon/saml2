@@ -22,9 +22,7 @@ public class SecurityConfig {
                 .saml2Login(saml2 -> saml2
                         .defaultSuccessUrl("/api/dashboard")  // Redirige a /api/dashboard después del login exitoso
                 )
-                .saml2Logout((saml2) -> saml2.logoutUrl("/logged-out")  // Elimina las cookies de sesión // Elimina las cookies de sesión // Redirige al dashboard después de logout
-                );// Configuración para SAML2 Logout
-
+                .saml2Logout(withDefaults());
         return http.build();
     }
 }
